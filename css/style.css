@@ -19,6 +19,7 @@ body {
     background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
+    font-family: 'Righteous', cursive;
 }
 .container {
     height: 100%;
@@ -38,11 +39,37 @@ header a {
     text-decoration: none;
     color: var(--secondary-color);
     font-size: 2rem; /*1rem = 16px*/
-    font-family: 'Righteous', cursive;
 }
 main {
-    background-color: tomato;
     flex-grow: 1; /*main fica maior, quanto maior o número, maior o espaço preenchido pelo main*/
+}
+.tittle {
+    position: relative;
+    grid-column: 1/-1;
+    place-self: center; /*centraliza a div tittle*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tittle_text {
+    font-size: 20vw; 
+    color: #fff;
+}
+.tittle__transparent {
+    position: absolute;
+    font-size: 27vw;
+    top: -50%;
+    color: #fff4;
+    z-index: -1;
+}
+.description {
+    background-color: purple;
+    grid-column: 1/7;
+}
+.action {
+    background-color: yellowgreen;
+    grid-column: 7/-1;
 }
 footer {
     margin-bottom: 24px;
