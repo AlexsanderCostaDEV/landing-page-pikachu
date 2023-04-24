@@ -1,27 +1,38 @@
+/*reset*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*criando variáveis*/
 :root {
     --primary-color: #f5cf06;
     --secondary-color: #8e4106;
 }
 
 body {
-    height: 100vh;
+    height: 100vh; /*100% do que estou vendo*/
     background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
 }
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /*divide igualmente em 12 partes de 1fr*/
+    width: 90vw; /*90% do que estou vendo*/
+    margin: auto; /*centraliza o objeto, no caso vai centralizar o grid*/
+}
 header {
     background-color: aqua;
+    margin-top: 70px;
 }
 main {
     background-color: tomato;
-    flex-grow: 1;
+    flex-grow: 1; /*main fica maior, quanto maior o número, maior o espaço preenchido pelo main*/
 }
 footer {
+    margin-bottom: 24px;
     background-color: plum;
 }
