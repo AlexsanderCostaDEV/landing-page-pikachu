@@ -109,6 +109,9 @@ main {
     .container {
         grid-template-columns: 1fr;
     }
+    header {
+        margin-top: 30px;
+    }
     .tittle {
         place-self: start center;
         transform: translateY(25%);
@@ -128,5 +131,21 @@ main {
     footer{
         display: none;
     }
-    
+}
+
+/* MOBILE*/
+@media screen and (max-width:640px) {
+    .description__tittle {
+        font-size: 10vw;
+    }
+    .description__text {
+        display: none;
+    }
+    .action {
+        width: 100%;
+        font-size: 10vw;
+    }
+    .pikachu-image {
+        width: 90vw;
+    }
 }
