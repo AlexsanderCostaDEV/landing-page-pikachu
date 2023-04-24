@@ -1,3 +1,6 @@
+/*importação da fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 /*reset*/
 * {
     margin: 0;
@@ -25,8 +28,17 @@ body {
     margin: auto; /*centraliza o objeto, no caso vai centralizar o grid*/
 }
 header {
-    background-color: aqua;
     margin-top: 70px;
+}
+header a {
+    grid-column: 1/-1; /*header a irá preencher todo o espaço disponível*/
+    display: flex;
+    align-items: center;
+    gap: 16px; /*espaço entre os itens do display*/
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 2rem; /*1rem = 16px*/
+    font-family: 'Righteous', cursive;
 }
 main {
     background-color: tomato;
